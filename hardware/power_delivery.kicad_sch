@@ -970,10 +970,14 @@
     (uuid fc75f09b-8dc7-4684-a8c7-9510a99f2f6f)
   )
 
-  (text "Vout = Vref * (1 + R5 / R6)\nVout = 1.23 * (1 + 4.7k / 1k) = 7.011 V"
-    (at 90.17 113.03 0)
+  (text "Buck converter output voltage:\n\nVout = Vref * (1 + R5 / R6)\nVout = 1.23 * (1 + 4.7k / 1k) = 7.011 V"
+    (at 88.9 116.84 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 8c9192bf-5739-4c5f-9161-9e382b0ecdc1)
+  )
+  (text "TODO: Replace the screw connector" (at 24.13 90.17 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b144911a-89e9-4004-93de-27f88c821939)
   )
 
   (symbol (lib_id "power:GND") (at 180.34 105.41 0) (unit 1)
