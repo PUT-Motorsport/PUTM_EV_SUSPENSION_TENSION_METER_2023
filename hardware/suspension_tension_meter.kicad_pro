@@ -422,6 +422,10 @@
     [
       "5e14743a-2b2f-4bbb-8a38-9e15eddfe6cc",
       "CAN Transceiver"
+    ],
+    [
+      "ccbabcdf-8c4f-4881-9b05-2d9f9eba8bfb",
+      "ADC"
     ]
   ],
   "text_variables": {}
