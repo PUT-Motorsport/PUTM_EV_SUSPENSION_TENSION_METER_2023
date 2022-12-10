@@ -6,10 +6,11 @@
 
   (title_block
     (title "ADC")
-    (date "2022-12-04")
-    (rev "0.1.0")
+    (date "2022-12-10")
+    (rev "${REVISION}")
     (company "PUT Motorsport")
-    (comment 1 "Author: I. Kajdan")
+    (comment 3 "Reviewer:")
+    (comment 4 "Author: I. Kajdan")
   )
 
   (lib_symbols
@@ -376,6 +377,7 @@
       )
     )
   )
+
 
   (junction (at 189.23 60.96) (diameter 0) (color 0 0 0 0)
     (uuid 10445851-c67d-4e37-97f2-815d1d4865b5)
