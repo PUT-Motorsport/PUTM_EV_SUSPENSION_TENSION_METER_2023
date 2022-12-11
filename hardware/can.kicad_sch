@@ -6,11 +6,9 @@
 
   (title_block
     (title "CAN Transceiver")
-    (date "2022-12-10")
+    (date "2022-12-11")
     (rev "${REVISION}")
-    (company "PUT Motorsport")
-    (comment 3 "Reviewer:")
-    (comment 4 "Author: I. Kajdan")
+    (company "Author: I. Kajdan")
   )
 
   (lib_symbols
