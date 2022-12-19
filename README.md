@@ -1,6 +1,8 @@
 # Suspension Tension Meter
 
-This device is supposed to measure uniaxial forces acting on the push-rodes and send collected data over the CAN bus.
+This circuit is supposed to measure uniaxial forces acting on the push-rodes and send collected data over the CAN bus.
+
+![PCB Front](docs/pcb.png "PCB Front")
 
 ## Firmware
 
