@@ -2609,6 +2609,12 @@
     (path "/c45e2c08-9cd5-4204-9a3a-36c654e40e93"
       (reference "#PWR048") (unit 1) (value "GND") (footprint "")
     )
+    (path "/806827ee-9314-4e25-8483-d67eef20445a/4a890a4e-b954-4a0a-b6a0-928a82be62af"
+      (reference "#PWR049") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/806827ee-9314-4e25-8483-d67eef20445a/8618c8e9-3d65-4547-9812-78bd8aa2590d"
+      (reference "#PWR0101") (unit 1) (value "GND") (footprint "")
+    )
     (path "/5e14743a-2b2f-4bbb-8a38-9e15eddfe6cc/7b2ac88a-8ffc-4cb1-8d13-935cea3b1ba9"
       (reference "#U01") (unit 1) (value "GND") (footprint "")
     )
@@ -2713,6 +2719,12 @@
     )
     (path "/ccbabcdf-8c4f-4881-9b05-2d9f9eba8bfb/7eb176f4-3cbc-4049-a7b2-e0005b9ddfea"
       (reference "C30") (unit 1) (value "1μF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/806827ee-9314-4e25-8483-d67eef20445a/57188629-a2cb-42f5-8f53-e6cdd6892415"
+      (reference "C31") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/806827ee-9314-4e25-8483-d67eef20445a/84d4584f-0e03-4087-9ec9-4d6ab707140e"
+      (reference "C32") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/806827ee-9314-4e25-8483-d67eef20445a/c6e4a66b-7bb5-4d58-99df-38d69a5b9c8f"
       (reference "D1") (unit 1) (value "SK36A") (footprint "Diode_SMD:D_SMA")
