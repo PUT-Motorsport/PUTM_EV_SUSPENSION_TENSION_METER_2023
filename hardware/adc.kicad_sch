@@ -6,7 +6,7 @@
 
   (title_block
     (title "ADC")
-    (date "2022-12-18")
+    (date "2022-12-22")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
   )
