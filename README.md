@@ -2,7 +2,9 @@
 
 This circuit is supposed to measure uniaxial forces acting on the push-rodes and send collected data over the CAN bus.
 
-![PCB Front](docs/pcb.png "PCB Front")
+<p align="center">
+  <img width="50%" src="documentation/pcb.png">
+</p>
 
 ## Firmware
 

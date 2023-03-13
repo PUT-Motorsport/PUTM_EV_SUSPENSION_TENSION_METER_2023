@@ -1,3 +1,4 @@
 (sym_lib_table
+  (version 7)
   (lib (name "Local_Library")(type "KiCad")(uri "${KIPRJMOD}/suspension_tension_meter.kicad_sym")(options "")(descr ""))
 )
