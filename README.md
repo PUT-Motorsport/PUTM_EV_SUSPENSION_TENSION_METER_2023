@@ -8,7 +8,7 @@ This circuit is supposed to measure uniaxial forces acting on the push-rodes and
 
 ## Firmware
 
-The [Adafruit NAU7802 library](https://github.com/adafruit/Adafruit_NAU7802) has been used as a reference for writing the firmware for the STM microprocessor.
+The [Adafruit library](https://github.com/adafruit/Adafruit_NAU7802) and [this project](https://github.com/alex7709/ECE4180F19_CAN_Project) have been used as a reference for writing the driver for the NAU7802.
 
 ## Hardware
 
