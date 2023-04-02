@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
  ******************************************************************************
- * @file           : main.c
+ * @file           : main.cpp
  * @brief          : Main program body
  ******************************************************************************
  * @attention
@@ -24,7 +24,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "nau7802.h"
+#include "nau7802.hpp"
+#include "PM08-CANBUS-SUSMETER.hpp" // TODO: Upstream this
+#include "PUTM_EV_CAN_LIBRARY/lib/can.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,10 +45,9 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-
 /* USER CODE BEGIN PV */
-float result_ch1 = 0;
-float result_ch2 = 0;
+uint8_t result_ch1[8];
+uint8_t result_ch2[8];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,10 +93,12 @@ int main(void)
 	MX_I2C2_Init();
 	MX_I2C3_Init();
 	/* USER CODE BEGIN 2 */
-	NAU7802_Init(hi2c3); // CH1 (Left)
+	NAU7802_Init(hi2c3); // CH1
 	NAU7802_Switch_Channel(hi2c3, NAU7802_CHANNEL_1);
-	NAU7802_Init(hi2c2); // CH2 (Right)
+	NAU7802_Init(hi2c2); // CH2
 	NAU7802_Switch_Channel(hi2c2, NAU7802_CHANNEL_1);
+
+	PUTM_CAN::Can can(&hcan1, &PUTM_CAN::filter::null_filter);
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
@@ -105,8 +108,16 @@ int main(void)
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
-		result_ch1 = NAU7802_Read_Float(hi2c3);
-		result_ch2 = NAU7802_Read_Float(hi2c2);
+		NAU7802_Read(hi2c3, result_ch1);
+		NAU7802_Read(hi2c2, result_ch2);
+
+		PUTM_CAN::Susmeter_data data {
+			.tension_left = result_ch1[8],
+			.tension_right = result_ch2[8]
+		};
+
+		can.send(data);
+
 		HAL_Delay(100); // TODO: Rewrite using interrupts
 	}
 	/* USER CODE END 3 */

@@ -7,7 +7,7 @@
  */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include "nau7802.h"
+#include "nau7802.hpp"
 
 /* Private variables ---------------------------------------------------------*/
 uint8_t NAU7802_ADDRESS = 0x2A;

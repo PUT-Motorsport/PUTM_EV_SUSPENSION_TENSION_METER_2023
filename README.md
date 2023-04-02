@@ -6,6 +6,18 @@ This circuit is supposed to measure uniaxial forces acting on the push-rodes and
   <img width="50%" src="documentation/pcb.png">
 </p>
 
+## Build
+
+1. Clone the repository:
+    ```
+    git clone --recurse-submodules 'https://github.com/PUT-Motorsport/PUTM_EV_SUSPENSION_TENSION_METER_2023.git'
+    ```
+1. Import the project into the CubeIDE.
+1. Temporarily rename `main.cpp` to `main.c`.
+1. Run the Device Configuration Tool to update the code.
+1. Rename `main.c` back to `main.cpp`.
+
+
 ## Firmware
 
 The [Adafruit library](https://github.com/adafruit/Adafruit_NAU7802) and [this project](https://github.com/alex7709/ECE4180F19_CAN_Project) have been used as a reference for writing the driver for the NAU7802.
