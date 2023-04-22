@@ -6,7 +6,7 @@
 
   (title_block
     (title "ADC")
-    (date "2022-12-28")
+    (date "2023-04-18")
     (rev "${REVISION}")
     (company "Author: I. Kajdan")
     (comment 1 "Reviewer: M. Jaruga")
@@ -296,7 +296,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
@@ -348,7 +348,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -376,6 +376,7 @@
       )
     )
   )
+
 
   (junction (at 176.53 115.57) (diameter 0) (color 0 0 0 0)
     (uuid 123e49e6-9791-4f5f-8857-a6f90e85bf18)

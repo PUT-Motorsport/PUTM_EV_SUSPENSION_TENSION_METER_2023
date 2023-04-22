@@ -56,15 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "isolated_copper|134712500|85687113|ef1f5ac9-e7d3-4d6f-a9da-a162cf18e1c3|00000000-0000-0000-0000-000000000000",
-        "isolated_copper|143105896|106639400|ef1f5ac9-e7d3-4d6f-a9da-a162cf18e1c3|00000000-0000-0000-0000-000000000000",
-        "isolated_copper|143112538|116912248|ef1f5ac9-e7d3-4d6f-a9da-a162cf18e1c3|00000000-0000-0000-0000-000000000000",
-        "silk_overlap|137930000|90714466|d178546a-c332-4d01-895f-c076d78e1e33|39e87aca-6806-4b13-9c85-2b74858c9c51",
-        "silk_overlap|137930000|90714466|d178546a-c332-4d01-895f-c076d78e1e33|844a4247-560a-4ade-8e73-b681ff0cff29",
-        "silk_overlap|173810000|106820000|ca77ba8e-b99e-4242-baa6-06b1b7142ee1|444f7579-4206-47d7-aea8-b7ba66d18537",
-        "silk_overlap|173810000|106820000|ca77ba8e-b99e-4242-baa6-06b1b7142ee1|99843b97-e06e-4c35-a665-5de38a09d93e"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -85,12 +77,12 @@
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
-        "isolated_copper": "warning",
+        "isolated_copper": "ignore",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
         "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -102,12 +94,12 @@
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
-        "text_thickness": "warning",
+        "text_height": "ignore",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -131,8 +123,8 @@
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.7999999999999999,
-        "min_text_thickness": 0.09999999999999999,
+        "min_text_height": 1.0,
+        "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.127,
         "min_via_annular_width": 0.125,
@@ -196,16 +188,20 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.5,
+          "diameter": 0.56,
           "drill": 0.3
         },
         {
-          "diameter": 0.75,
-          "drill": 0.5
+          "diameter": 0.7,
+          "drill": 0.3
         },
         {
-          "diameter": 1.25,
-          "drill": 0.75
+          "diameter": 1.0,
+          "drill": 0.4
+        },
+        {
+          "diameter": 1.3,
+          "drill": 0.5
         }
       ],
       "zones_allow_external_fillets": false,
@@ -219,7 +215,10 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "multiple_net_names|1993900|736600|dc12d7e6-46c8-48c2-8fdb-5f1380e2d765|b6cbabc9-3f32-4ef0-b9f1-f0a5832e6e89|||",
+      "multiple_net_names|1993900|812800|4a0785e6-7f6e-463f-9c33-cf59809acf90|81c6587d-0e73-490f-866f-bf9f15c3438f|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -452,8 +451,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
-        "via_diameter": 0.75,
-        "via_drill": 0.5,
+        "via_diameter": 0.56,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -470,7 +469,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "suspension_tension_meter.step",
       "vrml": ""
     },
     "page_layout_descr_file": "suspension_tension_meter.kicad_wks"
