@@ -69,6 +69,12 @@ void Error_Handler(void);
 #define SCLK2_GPIO_Port GPIOB
 #define SDIO2_Pin GPIO_PIN_14
 #define SDIO2_GPIO_Port GPIOB
+#define SWDIO_Pin GPIO_PIN_13
+#define SWDIO_GPIO_Port GPIOA
+#define SWCLK_Pin GPIO_PIN_14
+#define SWCLK_GPIO_Port GPIOA
+#define SWO_Pin GPIO_PIN_3
+#define SWO_GPIO_Port GPIOB
 #define CAN_RX_Pin GPIO_PIN_8
 #define CAN_RX_GPIO_Port GPIOB
 #define CAN_TX_Pin GPIO_PIN_9
